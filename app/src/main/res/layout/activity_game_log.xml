@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ghost.gboardgametracker.ui.gamelog.GameLogActivity">
+
+    <include layout="@layout/no_item_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/game_log_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/minute_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/zero_time"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_grey"
+        android:textSize="18sp" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minutes_space"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/second_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/zero_time"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_grey"
+        android:textSize="18sp" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seconds"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

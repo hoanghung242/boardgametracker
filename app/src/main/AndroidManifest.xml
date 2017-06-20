@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ghost.gboardgametracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BoardGameTrackerApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.splashscreen.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="872a14894b0eda583c5129cdbfed5eea7e71107f" />
+
+        <activity
+            android:name=".ui.newgame.NewGameActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.player.PlayerActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.gamedetail.GameDetailActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeActionbar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.play.GamePlayActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.gamesetting.GameSettingActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeActionbar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.playtime.PlayTimeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeNoActionBarDarkStatusBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.gamelog.GameLogActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeActionbar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.gamefinish.GameFinishActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeActionbar"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

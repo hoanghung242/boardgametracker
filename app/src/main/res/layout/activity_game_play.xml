@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="5dp"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <include layout="@layout/toolbar" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/no_game_layout_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_no_game" />
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        style="@style/AppTheme.no_game.text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_game_is_playing_now" />
+
+                </LinearLayout>
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_ad_unit_id" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/player_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/adView"/>
+
+                <!--
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/total_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="28dp"
+                    style="@style/AppTheme.ingame.timer.total_time_text"
+                    android:background="@color/dark"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="00:00:00"/>
+
+                -->
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:id="@+id/action_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    fab:menu_colorNormal="@color/fab_normal"
+                    fab:menu_colorPressed="@color/fab_pressed"
+                    fab:menu_colorRipple="@color/fab_ripple"
+                    fab:menu_fab_hide_animation="@anim/bottom_down"
+                    fab:menu_fab_show_animation="@anim/bottom_up">
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/start_player_turn_time_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_timer_white"
+                        app:fab_size="mini"
+                        fab:fab_colorNormal="@color/fab_normal"
+                        fab:fab_colorPressed="@color/fab_pressed"
+                        fab:fab_colorRipple="@color/fab_ripple"
+                        fab:fab_label="@string/start_turn" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/roll_a_dice_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_dice_white"
+                        app:fab_size="mini"
+                        fab:fab_colorNormal="@color/fab_normal"
+                        fab:fab_colorPressed="@color/fab_pressed"
+                        fab:fab_colorRipple="@color/fab_ripple"
+                        fab:fab_label="@string/rolling_dice" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/pick_random_player_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_random_player_white"
+                        app:fab_size="mini"
+                        fab:fab_colorNormal="@color/fab_normal"
+                        fab:fab_colorPressed="@color/fab_pressed"
+                        fab:fab_colorRipple="@color/fab_ripple"
+                        fab:fab_label="@string/random_a_player" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/finish_game_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_white"
+                        app:fab_size="mini"
+                        fab:fab_colorNormal="@color/fab_normal"
+                        fab:fab_colorPressed="@color/fab_pressed"
+                        fab:fab_colorRipple="@color/fab_ripple"
+                        fab:fab_label="@string/finish_game" />
+
+                </com.github.clans.fab.FloatingActionMenu>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/drawer_navigation_view" />
+
+</android.support.v4.widget.DrawerLayout>

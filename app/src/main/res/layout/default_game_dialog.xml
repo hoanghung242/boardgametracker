@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_info_white" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/dialog_title"
+            style="@style/AppTheme.game_dialog.title.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:text="@string/information" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/very_thin_line"
+        android:background="@color/light_blue" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/dialog_description"
+            style="@style/AppTheme.game_dialog.description.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_standard_margin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/very_thin_line"
+        android:background="@color/dark_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/negative_btn"
+            style="@style/AppTheme.game_dialog.button_title.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_standard_margin"
+            android:paddingTop="@dimen/activity_standard_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/material_dark_button_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel" />
+
+        <View
+            android:id="@+id/button_divider"
+            android:layout_width="@dimen/very_thin_line"
+            android:layout_height="match_parent"
+            android:background="@color/dark_grey" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/positive_btn"
+            style="@style/AppTheme.game_dialog.button_title.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_standard_margin"
+            android:paddingTop="@dimen/activity_standard_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/material_dark_button_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="5dp"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <include layout="@layout/toolbar" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/no_item_layout"/>
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_ad_unit_id" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/game_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/adView"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/add_new_game_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:src="@drawable/ic_add"
+                    fab:fab_colorNormal="@color/fab_normal"
+                    fab:fab_colorPressed="@color/fab_pressed"
+                    fab:fab_colorRipple="@color/fab_ripple" />
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/add_new_game_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/activity_double_standard_margin"
+                    android:layout_toLeftOf="@+id/add_new_game_btn"
+                    android:layout_toStartOf="@+id/add_new_game_btn"
+                    android:drawableEnd="@drawable/ic_arrow_dark_right"
+                    android:drawablePadding="@dimen/activity_standard_margin"
+                    android:drawableRight="@drawable/ic_arrow_dark_right"
+                    android:gravity="center"
+                    android:text="@string/add_new_game"
+                    android:textColor="@color/dark" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/drawer_navigation_view" />
+
+</android.support.v4.widget.DrawerLayout>

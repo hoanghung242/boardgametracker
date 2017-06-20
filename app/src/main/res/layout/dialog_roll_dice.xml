@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark80"
+    android:clickable="true"
+    android:gravity="center">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/dice_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_standard_margin"
+        android:layout_marginStart="@dimen/activity_standard_margin"
+        android:layout_marginEnd="@dimen/activity_standard_margin"
+        android:gravity="center"
+        android:text="@string/tap_any_dice_to_start"
+        android:textColor="@color/white" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/dice_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dice_hint"
+        android:layout_margin="@dimen/activity_standard_margin"
+        android:background="@drawable/material_dark_button_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:flexWrap="wrap"
+        app:justifyContent="center" />
+
+</RelativeLayout>

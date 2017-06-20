@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#43a047</color>
+
+    <!-- primitive colors -->
+    <color name="white">#ffffff</color>
+    <color name="indigo">#303f9f</color>
+    <color name="dark">#2a2a2a</color>
+    <color name="dark80">#80212121</color>
+    <color name="dark_grey">#757575</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_green">#33691e</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#039be5</color>
+    <color name="light_grey">#9e9e9e</color>
+
+    <!-- specific feature colors -->
+    <color name="drawer_background">#424242</color>
+    <color name="new_player_hint_color">#50757575</color>
+    <color name="navdrawer_selected_item_background">#1a000000</color>
+    <color name="navdrawer_item_icon">#1a237e</color>
+    <color name="navdrawer_item_title">#1a237e</color>
+    <color name="fab_normal">#43a047</color>
+    <color name="fab_pressed">#2e7d32</color>
+    <color name="fab_ripple">#c8e6c9</color>
+    <color name="random_player_bg_color">#ffccbc</color>
+    <color name="splashscreen_description_color">#e0e0e0</color>
+    <color name="no_game_text_color">#9e9e9e</color>
+    <color name="winner_bg_color">#00c853</color>
+    <color name="finished_game_text_color">#d50000</color>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/score_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_double_standard_margin"
+        android:layout_marginStart="@dimen/activity_double_standard_margin"
+        android:gravity="center_horizontal"
+        android:hint="@string/input_amount"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_grey" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/score_suggest_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/activity_standard_margin"
+        android:layout_marginEnd="@dimen/activity_standard_margin"
+        android:orientation="horizontal"
+        app:flexWrap="wrap" />
+
+</LinearLayout>

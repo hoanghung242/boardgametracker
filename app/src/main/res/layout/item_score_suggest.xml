@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/score"
+    style="@style/AppTheme.ingame.player_score_suggestion_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/score_suggest_bg"
+    android:gravity="center_horizontal"
+    android:paddingBottom="2dp"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:paddingTop="2dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="8dp"
+    android:maxLines="1"/>
+

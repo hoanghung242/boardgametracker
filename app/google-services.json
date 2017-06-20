@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "417041850643",
+    "firebase_url": "https://g-boardgame-tracker-4a9df.firebaseio.com",
+    "project_id": "g-boardgame-tracker-4a9df",
+    "storage_bucket": "g-boardgame-tracker-4a9df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417041850643:android:de06d530995f2b1b",
+        "android_client_info": {
+          "package_name": "ghost.gboardgametracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417041850643-tu3h19l6afhut53b9al8eeq29rnokjgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ghost.gboardgametracker",
+            "certificate_hash": "6cdb8da8232284a5a9b148d490fc389eb600d673"
+          }
+        },
+        {
+          "client_id": "417041850643-8rk9ghoals6j9vv7lu5r2ftensfjketr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCunfugw-4iY0_FupT_T_IzyVx_eEEU5KA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417041850643-8rk9ghoals6j9vv7lu5r2ftensfjketr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

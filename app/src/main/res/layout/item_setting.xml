@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/setting_title"
+        style="@style/AppTheme.game_settings.title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/setting_description"
+        style="@style/AppTheme.game_settings.description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_title"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="@string/set_staring_score_for_all_players" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/setting_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/very_thin_line"
+        android:layout_below="@id/setting_description"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/dark_grey" />
+
+</RelativeLayout>

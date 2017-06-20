@@ -1,0 +1,224 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="AppThemeActionbar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="AppThemeNoActionBarDarkStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.splashscreen.app_name.text" parent="AppTheme">
+        <item name="android:textSize">90sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="typeface">roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.splashscreen.app_description.text" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/splashscreen_description_color</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.Drawer.Header.text.title" parent="AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="typeface">roboto_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Drawer.Header.text.description" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="typeface">roboto_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.new_game.player_icon_text" parent="AppTheme">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.home.game.title.text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.home.game.date.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_light</item>
+    </style>
+
+    <style name="AppTheme.home.game.finish.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/finished_game_text_color</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.home.game.description.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_light</item>
+    </style>
+
+    <style name="AppTheme.home.game.status.text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.player.name.text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.player.description.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_light</item>
+    </style>
+
+    <style name="AppTheme.ingame.player_name_text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.ingame.player_score_text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.ingame.player_score_action_text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/indigo</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.game_settings.title" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.game_settings.description" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_light</item>
+    </style>
+
+    <style name="AppTheme.ingame.timer.time_text" parent="AppTheme">
+        <item name="android:textSize">100sp</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.ingame.timer.total_time_text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.ingame.transfer.to_player_text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.ingame.transfer.to_player_list.text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="typeface">roboto_bold</item>
+    </style>
+
+    <style name="AppTheme.ingame.player_score_suggestion_text" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.game_dialog.title.text" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.game_dialog.description.text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="typeface">roboto_light</item>
+    </style>
+
+    <style name="AppTheme.game_dialog.button_title.text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.no_game.text" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/no_game_text_color</item>
+        <item name="typeface">roboto_light</item>
+    </style>
+
+    <style name="AppTheme.game_finish.player_name.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.game_finish.player_score.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.game_finish.header_key.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_light</item>
+    </style>
+
+    <style name="AppTheme.game_finish.header_value.text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+    <style name="AppTheme.game_finish.player_icon_text" parent="AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="typeface">roboto_regular</item>
+    </style>
+
+</resources>

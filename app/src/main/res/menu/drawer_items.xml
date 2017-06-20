@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_item_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_item_playing"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_play"
+            android:title="@string/playing" />
+
+        <item
+            android:id="@+id/nav_item_new_game"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_new_game"
+            android:title="@string/new_game" />
+
+        <!-- TODO: enable in next version
+        <item
+            android:id="@+id/nav_item_players"
+            android:checked="true"
+            android:icon="@drawable/ic_players"
+            android:title="@string/players" />
+            -->
+    </group>
+
+    <!-- Not for this version
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_settings"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_item_about"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_about"
+            android:title="@string/about" />
+    </group>
+
+    -->
+</menu>
